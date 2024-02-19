@@ -1,0 +1,86 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-transaction, .transaction-list, .chart {
+  margin-bottom: 20px;
+}
+
+/* Styling the form */
+.add-transaction form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-transaction label {
+  margin-bottom: 8px;
+}
+
+.add-transaction input[type="text"], .add-transaction select {
+  padding: 8px;
+  margin-bottom: 12px;
+}
+
+.add-transaction button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Styling the transaction list */
+.transaction-list ul {
+  list-style-type: none;
+}
+
+.transaction-list li {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+/* Styling the chart */
+
+
+.chart canvas {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
+}
